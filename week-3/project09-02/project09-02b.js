@@ -21,7 +21,6 @@ let region = document.getElementById("region");
 let miles = document.getElementById("miles");
 let comments = document.getElementById("comments");
 
-
 // Print page objects to table
 
 riderName.textContent = sessionStorage.getItem("riderName");

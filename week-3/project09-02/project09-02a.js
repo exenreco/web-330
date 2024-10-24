@@ -20,10 +20,10 @@ let accOption = document.getElementById("accOption");
 let region = document.getElementById("region");
 let miles = document.getElementById("miles");
 let comments = document.getElementById("comments");
-let submit = document.getElementById('submitButton');
+let submit = document.getElementById("submitButton");
 
 // Event listener for submit on click
-submit.addEventListener('click', (el) => showData() );
+submit.addEventListener("click", (el) => showData());
 
 /**
  * SHOW DATA
@@ -36,16 +36,15 @@ submit.addEventListener('click', (el) => showData() );
  * @returns void
  */
 function showData() {
-
   // Session storage
-  window.sessionStorage.setItem('riderName', riderName.value);
-  window.sessionStorage.setItem('ageGroup', ageGroup.value);
-  window.sessionStorage.setItem('bikeOption', bikeOption.value);
-  window.sessionStorage.setItem('routeOption', routeOption.value);
-  window.sessionStorage.setItem('accOption', accOption.value);
-  window.sessionStorage.setItem('region', region.value);
-  window.sessionStorage.setItem('miles', miles.value);
-  window.sessionStorage.setItem('comments', comments.value);
+  window.sessionStorage.setItem("riderName", riderName.value);
+  window.sessionStorage.setItem("ageGroup", ageGroup.value);
+  window.sessionStorage.setItem("bikeOption", bikeOption.value);
+  window.sessionStorage.setItem("routeOption", routeOption.value);
+  window.sessionStorage.setItem("accOption", accOption.value);
+  window.sessionStorage.setItem("region", region.value);
+  window.sessionStorage.setItem("miles", miles.value);
+  window.sessionStorage.setItem("comments", comments.value);
 
   // redirect
   location.href = "project09-02b.html";
