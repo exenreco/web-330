@@ -3,9 +3,132 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author:     Exenreco Bell
+  Date:       October 29, 2024
+  Filename:   style.css
 */
 
 /* Your CSS goes here */
+
+/* quick css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Elements */
+
+body {
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#mainContainer {
+  background-color: #3b3f47;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  max-width: 75%;
+  min-width: 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+input,
+select,
+button {
+  margin-top: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input,
+select {
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+#characterOutput {
+  margin-top: 20px;
+}
+
+/* Character Output child element style rules */
+
+#characterOutput > .registered-player {
+  background-color: #2a2d34;
+  border-radius: 5px;
+  padding: 10px;
+}
+#characterOutput > .registered-player .heading {
+  text-align: center;
+}
+#characterOutput > .registered-player table {
+  position: relative;
+  display: block;
+  width: 95%;
+  margin: auto;
+  border: none;
+  border-color: transparent;
+  background-color: rgba(39, 170, 231, 0.473);
+  border-radius: 8px;
+}
+#characterOutput > .registered-player table th {
+  text-align: left;
+  padding: 5px;
+}
+#characterOutput > .registered-player table td {
+  width: 50%;
+  padding: 5px;
+}
+#characterOutput > .registered-player table .icon {
+  font-size: 3.45rem;
+  text-decoration: none;
+  font-style: normal;
+  padding: .5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+#characterOutput > .registered-player table ol {
+  list-style-type: none;
+  line-height: 20pt;
+  font-size: 0.85rem;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  justify-content: right;
+  align-items: right;
+}
